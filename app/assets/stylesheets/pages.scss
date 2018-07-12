@@ -1,3 +1,44 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.home__header {
+    background: #4768CF;
+    padding-top: 350px;
+}
+
+.home__header--tagline {
+    color: #fff;
+    line-height: 1.2;
+    padding-bottom: 20px;
+}
+
+.home__intro {}
+
+.home__services {}
+
+.home__services--branding {
+    background-image: url("circle.svg")
+}
+
+.home__services--software {
+    background-image: url("square.svg")
+}
+
+.home__services--adverts {
+    background-image: url("triangle.svg")
+}
+
+.home__services--title {}
+
+.home__services--content {}
+
+.service--item {}
+
+.home__cta {
+    padding: 20px 0;
+    margin-bottom: 50px;
+}
+
+.home__cta--text {}
+
+.home__cta--link {}
