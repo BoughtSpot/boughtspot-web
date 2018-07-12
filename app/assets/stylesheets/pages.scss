@@ -94,23 +94,27 @@
 .clients__list--group {
     margin: 0px;
     margin-top: 80px;
+    padding: 10px;
 }
 
 .clients__list--item {
     list-style-type: none;
     margin: 15px 0;
     display: inline-block;
-    width: 49%;
+    width: 22.5%;
+    padding: 0 1%;
 }
 
-@media (min-width: 960px) {
+@media (max-width: 768px) {
     .clients__list--item {
-        width: 24.5%;
+        width: 30%;
+        padding: 0 .8%;
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 600px) {
     .clients__list--item {
-        width: 33%;
+        width: 42.8%;
+        padding: 0 2.5%;
     }
 }
