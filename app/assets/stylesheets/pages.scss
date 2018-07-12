@@ -14,7 +14,10 @@
 
 .home__intro {}
 
-.home__services {}
+.home__services {
+    padding: 100px 0 100px;
+    background: url("divider.svg") center bottom no-repeat;
+}
 
 .home__services--branding {
     background-image: url("circle.svg")
@@ -30,15 +33,32 @@
 
 .home__services--title {}
 
-.home__services--content {}
-
-.service--item {}
-
-.home__cta {
-    padding: 20px 0;
-    margin-bottom: 50px;
+.home__services--content {
+    margin-top: 10px;
 }
 
-.home__cta--text {}
+.service--item {
+    max-width: 30%;
+    padding-top: 95px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    &:not(:last-of-type) {
+        margin-right: 4%;
+    }
+}
 
-.home__cta--link {}
+.home__cta {
+    padding: 60px 0;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.home__cta--text {
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.home__cta--link {
+    font-weight: 100;
+}

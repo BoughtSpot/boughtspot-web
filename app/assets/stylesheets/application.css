@@ -28,6 +28,7 @@ body {
     font-size: 18px;
     line-height: 1.5;
     color: #59585B;
+    font-weight: 100;
 }
 
 .container {
@@ -36,10 +37,15 @@ body {
     margin: 0 auto;
 }
 
+p {
+    margin: 0;
+}
+
 h1,
 h2 {
     font-family: "Roboto Slab", serif;
     font-weight: 400;
+    margin: 0;
 }
 
 h1 {
@@ -48,4 +54,26 @@ h1 {
 
 h2 {
     font-size: 2em;
+}
+
+a {
+    transition: all ease 3.5ms;
+    -webkit-transition: all ease 3.5ms;
+    -moz-transition: all ease 3.5ms;
+    -o-transition: all ease 3.5ms;
+}
+
+.pink--button {
+    background: #E40066;
+    color: #fff;
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 12.5px 25px;
+}
+
+.pink--button:hover {
+    color: #FFFF00;
+}
+
+
 }
