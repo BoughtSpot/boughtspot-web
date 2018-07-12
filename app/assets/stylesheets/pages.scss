@@ -20,15 +20,15 @@
 }
 
 .home__services--branding {
-    background-image: url("circle.svg")
+    background-image: url(/images/circle.svg)
 }
 
 .home__services--software {
-    background-image: url("square.svg")
+    background-image: url(/images/square.svg)
 }
 
 .home__services--adverts {
-    background-image: url("triangle.svg")
+    background-image: url(/images/triangle.svg)
 }
 
 .home__services--title {}
@@ -87,7 +87,7 @@
 }
 
 .clients__list {
-    background: url("divider.svg") bottom center no-repeat;
+    background: url(/images/divider.svg) bottom center no-repeat;
     padding-bottom: 60px;
 }
 
