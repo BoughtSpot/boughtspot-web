@@ -1,6 +1,7 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$cdn-url: "http://cdn.interacht.com/boughtspot/";
 .home__header {
     background: #4768CF;
     padding-top: 350px;
@@ -16,19 +17,20 @@
 
 .home__services {
     padding: 100px 0 100px;
-    background: url("divider.svg") center bottom no-repeat;
+    background: url($cdn-url+"divider.svg") center bottom no-repeat;
 }
 
 .home__services--branding {
-    background-image: url("circle.svg")
+    background-image: url($cdn-url+"circle.svg")
 }
 
 .home__services--software {
-    background-image: url("square.svg")
+    // background-image: url("cdn.interacht.com/boughtspot/square.svg");
+    background-image: url($cdn-url+"square.svg")
 }
 
 .home__services--adverts {
-    background-image: url("triangle.svg")
+    background-image: url($cdn-url+"triangle.svg")
 }
 
 .home__services--title {}
