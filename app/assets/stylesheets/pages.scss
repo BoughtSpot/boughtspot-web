@@ -10,7 +10,8 @@ $cdn-url: "http://cdn.interacht.com/boughtspot/";
 .home__header--tagline {
     color: #fff;
     line-height: 1.2;
-    padding-bottom: 20px;
+    padding: 0 5% 20px;
+    width: 90%;
 }
 
 .home__intro {}
@@ -25,7 +26,6 @@ $cdn-url: "http://cdn.interacht.com/boughtspot/";
 }
 
 .home__services--software {
-    // background-image: url("cdn.interacht.com/boughtspot/square.svg");
     background-image: url($cdn-url+"square.svg")
 }
 
@@ -40,7 +40,7 @@ $cdn-url: "http://cdn.interacht.com/boughtspot/";
 }
 
 .service--item {
-    max-width: 30%;
+    width: 30%;
     padding-top: 95px;
     background-repeat: no-repeat;
     display: inline-block;
@@ -89,7 +89,7 @@ $cdn-url: "http://cdn.interacht.com/boughtspot/";
 }
 
 .clients__list {
-    background: url("divider.svg") bottom center no-repeat;
+    background: url($cdn-url+"divider.svg") bottom center no-repeat;
     padding-bottom: 60px;
 }
 
@@ -111,6 +111,14 @@ $cdn-url: "http://cdn.interacht.com/boughtspot/";
     .clients__list--item {
         width: 30%;
         padding: 0 .8%;
+    }
+}
+
+@media (max-width: 712px) {
+    .service--item {
+        width: 90%;
+        padding: 95px 0 0;
+        margin: 5%;
     }
 }
 
