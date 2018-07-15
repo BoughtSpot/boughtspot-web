@@ -31,3 +31,9 @@
 
 en:
   hello: "Hello world"
+  app:
+    name: "BoughtSpot"
+    company: "BoughtSpot"
+    domain: "boughtspot.com"
+    author: "Claude Ayitey"
+    cdn: "http://cdn.interacht.com/boughtspot/"

@@ -57,6 +57,12 @@ h2 {
 }
 
 a {
+    color: #4768CF;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #4A90E2;
     transition: all ease 3.5ms;
     -webkit-transition: all ease 3.5ms;
     -moz-transition: all ease 3.5ms;
