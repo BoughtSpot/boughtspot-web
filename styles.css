@@ -1,25 +1,3 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
-
-
-/* reset */
-
-
-/* base styles */
-
 body {
     margin: 0;
     padding: 0;
@@ -81,23 +59,21 @@ a:hover {
     width: 90%;
 }
 
-.home__intro {}
-
 .home__services {
     padding: 100px 0 100px;
-    /* background: url($cdn-url+"divider.svg") center bottom no-repeat; */
+    background: url("img/divider.svg") center bottom no-repeat;
 }
 
 .home__services--branding {
-    /* background-image: url($cdn-url+"circle.svg") */
+    background-image: url("img/circle.svg")
 }
 
 .home__services--software {
-    /* background-image: url($cdn-url+"square.svg") */
+    background-image: url("img/square.svg")
 }
 
 .home__services--adverts {
-    /* background-image: url($cdn-url+"triangle.svg") */
+    background-image: url("img/triangle.svg")
 }
 
 .home__services--title {}
@@ -111,10 +87,10 @@ a:hover {
     padding-top: 95px;
     background-repeat: no-repeat;
     display: inline-block;
+}
 
-    &:not(:last-of-type) {
-        margin-right: 4%;
-    }
+.service--item:not(:last-of-type) {
+    margin-right: 4%;
 }
 
 .home__cta {
@@ -133,18 +109,11 @@ a:hover {
     font-weight: 100;
 }
 
-
-/*
-    The ff statements are for the Clients page
-*/
-
 .clients__header {
     background: #ffff00;
     padding-top: 200px;
     margin-bottom: 1em;
 }
-
-.clients__header--enclosure {}
 
 .clients__header--title {
     margin-left: 40px;
@@ -157,7 +126,7 @@ a:hover {
 }
 
 .clients__list {
-    /* background: url($cdn-url+"divider.svg") bottom center no-repeat; */
+    background: url("img/divider.svg") bottom center no-repeat;
     padding-bottom: 60px;
 }
 
