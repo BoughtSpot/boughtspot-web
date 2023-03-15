@@ -1,0 +1,284 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+/* reset */
+
+
+/* base styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #59585B;
+    font-weight: 100;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+p {
+    margin: 0;
+}
+
+h1,
+h2 {
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+a {
+    color: #4768CF;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #4A90E2;
+    transition: all ease 3.5ms;
+    -webkit-transition: all ease 3.5ms;
+    -moz-transition: all ease 3.5ms;
+    -o-transition: all ease 3.5ms;
+}
+
+.home__header {
+    background: #4768CF;
+    padding-top: 350px;
+}
+
+.home__header--tagline {
+    color: #fff;
+    line-height: 1.2;
+    padding: 0 5% 20px;
+    width: 90%;
+}
+
+.home__intro {}
+
+.home__services {
+    padding: 100px 0 100px;
+    /* background: url($cdn-url+"divider.svg") center bottom no-repeat; */
+}
+
+.home__services--branding {
+    /* background-image: url($cdn-url+"circle.svg") */
+}
+
+.home__services--software {
+    /* background-image: url($cdn-url+"square.svg") */
+}
+
+.home__services--adverts {
+    /* background-image: url($cdn-url+"triangle.svg") */
+}
+
+.home__services--title {}
+
+.home__services--content {
+    margin-top: 10px;
+}
+
+.service--item {
+    width: 30%;
+    padding-top: 95px;
+    background-repeat: no-repeat;
+    display: inline-block;
+
+    &:not(:last-of-type) {
+        margin-right: 4%;
+    }
+}
+
+.home__cta {
+    padding: 60px 0;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.home__cta--text {
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.home__cta--link {
+    font-weight: 100;
+}
+
+
+/*
+    The ff statements are for the Clients page
+*/
+
+.clients__header {
+    background: #ffff00;
+    padding-top: 200px;
+    margin-bottom: 1em;
+}
+
+.clients__header--enclosure {}
+
+.clients__header--title {
+    margin-left: 40px;
+    line-height: 1.2;
+    padding-bottom: 20px;
+}
+
+.clients__intro {
+    margin-top: 20px;
+}
+
+.clients__list {
+    /* background: url($cdn-url+"divider.svg") bottom center no-repeat; */
+    padding-bottom: 60px;
+}
+
+.clients__list--group {
+    margin: 0px;
+    margin-top: 80px;
+    padding: 10px;
+}
+
+.clients__list--item {
+    list-style-type: none;
+    margin: 15px 0;
+    display: inline-block;
+    width: 22.5%;
+    padding: 0 1%;
+}
+
+@media (max-width: 768px) {
+    .clients__list--item {
+        width: 30%;
+        padding: 0 .8%;
+    }
+}
+
+@media (max-width: 712px) {
+    .service--item {
+        width: 90%;
+        padding: 95px 0 0;
+        margin: 5%;
+    }
+}
+
+@media (max-width: 600px) {
+    .clients__list--item {
+        width: 42.8%;
+        padding: 0 2.5%;
+    }
+}
+
+.pink--button {
+    background: #E40066;
+    color: #fff;
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 12.5px 25px;
+}
+
+.pink--button:hover {
+    color: #FFFF00;
+}
+
+
+footer {
+    background: #F5F5F5;
+    padding: 100px 0;
+    margin-top: 40px;
+}
+
+.footer__section {
+    display: inline-block;
+}
+
+.footer__section--text {
+    line-height: 2
+}
+
+.footer__section--brand {
+    width: 44.5%;
+    padding-left: 5%;
+}
+
+.footer__section--map {
+    width: 16.5%;
+}
+
+.footer__section--contact {
+    width: 33%;
+}
+
+@media (max-width: 940px) {
+    .footer__section--brand {
+        width: 40%;
+        padding-left: 5%;
+    }
+
+    .footer__section--map {
+        width: 20%;
+    }
+
+    .footer__section--contact {
+        width: 25%;
+    }
+}
+
+@media (max-width: 740px) {
+    footer {
+        padding: 75px 0;
+    }
+
+    .footer__section--brand {
+        width: 100%;
+        padding-left: 10%;
+    }
+
+    .footer__section--map {
+        width: 44%;
+        padding: 30px 0 0 10%;
+    }
+
+    .footer__section--contact {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer__section {
+        width: 80%;
+        padding-left: 10%;
+    }
+
+    .footer__section--contact {
+        margin-top: 40px;
+    }
+}
