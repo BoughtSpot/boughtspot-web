@@ -10,7 +10,6 @@ body {
 }
 
 .container {
-    width: 100%;
     max-width: 960px;
     margin: 0 auto;
 }
@@ -76,8 +75,6 @@ a:hover {
     background-image: url("img/triangle.svg")
 }
 
-.home__services--title {}
-
 .home__services--content {
     margin-top: 10px;
 }
@@ -103,6 +100,7 @@ a:hover {
     text-align: center;
     font-weight: 400;
     margin-bottom: 30px;
+    padding: 2px;
 }
 
 .home__cta--link {
@@ -123,6 +121,7 @@ a:hover {
 
 .clients__intro {
     margin-top: 20px;
+    padding: 20px;
 }
 
 .clients__list {
@@ -227,7 +226,7 @@ footer {
     }
 
     .footer__section--brand {
-        width: 100%;
+        width: 80%;
         padding-left: 10%;
     }
 
